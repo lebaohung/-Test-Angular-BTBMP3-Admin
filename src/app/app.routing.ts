@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Import Containers
 import { DefaultLayoutComponent } from './containers';
+import {ListUserComponent} from "./views/list-user/list-user.component";
 
 export const routes: Routes = [
   {
@@ -20,10 +21,16 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
+      },
+      {
+        path: 'user-list',
+        component: ListUserComponent
       }
     ]
   },
-  { path: '**', component: DefaultLayoutComponent }
+  { path: '**',
+    component: DefaultLayoutComponent
+  }
 ];
 
 @NgModule({

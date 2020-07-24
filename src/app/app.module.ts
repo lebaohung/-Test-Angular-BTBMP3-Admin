@@ -17,7 +17,8 @@ import { AppComponent } from './app.component';
 import { DefaultLayoutComponent } from './containers';
 
 const APP_CONTAINERS = [
-  DefaultLayoutComponent
+  DefaultLayoutComponent,
+  ListUserComponent
 ];
 
 import {
@@ -30,6 +31,9 @@ import {
 
 // Import routing module
 import { AppRoutingModule } from './app.routing';
+import {ListUserComponent} from "./views/list-user/list-user.component";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -42,7 +46,10 @@ import { AppRoutingModule } from './app.routing';
     AppFooterModule,
     AppHeaderModule,
     AppSidebarModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,

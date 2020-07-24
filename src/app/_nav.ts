@@ -12,7 +12,7 @@ export const navItems: INavData[] = [
   },
   {
     name: 'User List',
-    url: '',
+    url: '/user-list',
     icon: 'icon-speedometer',
     badge: {
       variant: 'info',

@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
-    redirectTo: 'dashboard',
+    // redirectTo: 'dashboard',
     data: {
       title: 'Dashboard'
     }

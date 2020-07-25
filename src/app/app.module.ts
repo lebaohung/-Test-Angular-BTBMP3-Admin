@@ -34,6 +34,7 @@ import { AppRoutingModule } from './app.routing';
 import {ListUserComponent} from "./views/list-user/list-user.component";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './views/login/login.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   declarations: [
     AppComponent,
     ...APP_CONTAINERS,
+    LoginComponent,
   ],
   providers: [{
     provide: LocationStrategy,

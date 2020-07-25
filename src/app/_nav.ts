@@ -20,6 +20,15 @@ export const navItems: INavData[] = [
     }
   },
   {
+    name: 'Login Form',
+    url: '/login',
+    icon: 'icon-speedometer',
+    badge: {
+      variant: 'info',
+      text: 'NEW'
+    }
+  },
+  {
     name: 'Disabled',
     url: '/dashboard',
     icon: 'icon-ban',

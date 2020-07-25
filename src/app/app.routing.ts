@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 // Import Containers
 import { DefaultLayoutComponent } from './containers';
 import {ListUserComponent} from "./views/list-user/list-user.component";
+import {LoginComponent} from "./views/login/login.component";
 
 export const routes: Routes = [
   {
@@ -25,6 +26,10 @@ export const routes: Routes = [
       {
         path: 'user-list',
         component: ListUserComponent
+      },
+      {
+        path: 'login',
+        component: LoginComponent
       }
     ]
   },
